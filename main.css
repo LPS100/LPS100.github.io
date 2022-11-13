@@ -5,26 +5,29 @@ body{
     background-blend-mode: multiply;
 	}
 .header {
-    padding: 10px;
-    margin: auto;
-    align: center;
+    padding: 15px;
+    text-align: center;
     min-width: 10%;
     height: auto;
 }
+
+/*Column CSS*/
 .column1 {
     float: left;
     width: 30%;
+}
+.column2 {
+    float: left;
+    width: 70%;
 }
 .row:after {
     content: "";
     display: table;
     clear: both;
   }
-.column2 {
-    float: left;
-    width: 70%;
-}
-.content{
+
+/*Content*/
+.content-box{
     background-color: #f3dcc6;
     border-radius: 6px;
     margin: auto;
@@ -52,7 +55,7 @@ body{
     border-radius: 7px;
     font-family: Candara;
     }
-.content-content{
+.content{
     color: #503421;
     overflow-wrap: break-word;
     min-width: 200px;
@@ -60,6 +63,8 @@ body{
     margin: 10px 10px auto;
     font-family: Candara;
     }
+
+/*Footer*/
 .footer {
     margin: auto;
     width: min-content;
