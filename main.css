@@ -42,7 +42,10 @@ body{
     border-bottom: 2px #ac7945 ridge;
     border-bottom-left-radius: 7px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     }
+
+/*Index*/
 .content-index{
     background-color: #deb996;
     color: #503421;
@@ -50,17 +53,31 @@ body{
     min-height: 40px;
     min-width: 40px;
     max-width: 200px;
-    margin: 10px 10px auto;
+    margin: 10px 30px auto;
     border-right: 2px #ac7945 ridge;
     border-radius: 7px;
-    font-family: Candara;
     }
+.content-index p {
+    font-family: Candara;
+    text-align: left;
+    padding: 5px;
+}
+
+/*Index Pic*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+/*Content*/
 .content{
     color: #503421;
     overflow-wrap: break-word;
     min-width: 200px;
     max-width: 700px;
-    margin: 10px 10px auto;
+    margin: 5px 5px auto;
     font-family: Candara;
     }
 
