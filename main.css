@@ -1,9 +1,29 @@
 body{
-    background-image: url(https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/background%20scarf.png);
-    background-size: 30%;
+    background: url(https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/background%20scarf.png) #ac794516;
+    background-size: 35%;
 	background-repeat: repeat;
+    background-blend-mode: multiply;
 	}
+.header {
+    padding: 10px;
+    margin: auto;
+}
 .content{
-    background-color: #ecc9a6;
-    font-family: Arial;
+    background-color: #f3dcc6;
+    border-radius: 6px;
+    margin: auto;
     }
+.content-header{
+    color: #503421;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+.footer {
+    margin: auto;
+    height: min-content;
+    background-color: #f3dcc6;
+}
+.footer-content {
+    padding: 0px 2px 0px 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
