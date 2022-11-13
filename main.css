@@ -65,16 +65,13 @@ body{
     }
 
 /*Footer*/
-.footer {
-    margin: auto;
+footer {
+    margin: 10px auto;
+    padding: 0px 5px 0px 5px;
+    font-family: Candara;
+    font-size: 10px;
+    text-align: center;
     width: min-content;
     background-color: #deb996;
     border-radius: 6px;
-    margin: 10px auto;
-}
-.footer-content {
-    padding: 0px 5px 0px 5px;
-    font-family: Candara;
-    text-align: center;
-    font-size: 10px;
 }
