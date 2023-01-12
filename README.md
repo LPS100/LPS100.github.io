@@ -36,3 +36,4 @@ Currently under a wip.
 
 - List work-specific email
 - List my Commission Server
+- List my Art Tumblr
