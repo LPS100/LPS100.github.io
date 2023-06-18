@@ -1,4 +1,125 @@
-body{
+:root{
+    --background:#3a3131;
+    --portrait: url("https://cdn.discordapp.com/attachments/386579091551158272/1110579126617768036/export202305231544451479.png");
+    --sidebar:#f2d1af;
+    --sidebar-text:#333333;
+    --sidebar-url:#998080;
+    --sidebar-url-hover:#a10606;
+    --sidebar-url-active:#427b88;
+    --content:#a06a33;
+    --content-text:#1a1a1a;
+    --content-border:#e92525;
+    --url:#fff1e6;
+    --url-hover:#fffaf6;
+    --url-active:#e7d7cb;
+    --title:#a2f1cb;
+    --scrollbar:var(--Accent);
+    --accent:#f2992e;
+    --sub-accent:#ffb2b2;
+    }
+
+/*------------------Other-------------------*/
+    body {
+        margin:0;
+        background: var(--background) /*url({image:Background})*/;
+        background-attachment: fixed;
+        background-repeat:repeat;
+        background-size: 40%;
+        }
+        
+    .flex {
+        display:flex;
+        flex-wrap:nowrap;
+        }
+    
+    .portrait{
+        text-align: center;
+    } 
+
+    .portrait img{
+        width: 64px;
+        height: 64px;
+        border-radius: 50px;
+        }
+/*------------------Body Build-------------------*/
+    main {
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+    }
+    section {
+	max-width: 300px;
+	margin: 20px;
+	top: 120px;
+	position: relative;
+	right: 30px;
+    }
+/*------------------Sidebar-------------------*/
+    sidebar {
+	display: block;
+	min-width: 280px;
+	max-width: 600px;
+	position: sticky;
+	background-color: var(--sidebar);
+	color: var(--sidebar-text);
+	margin: 10px;
+	padding: 13px;
+	border-radius: 10px;
+    }
+    .sidebar-title {
+	text-align: center;
+	font-size: 23px;
+	font-family: Candara;
+	color: var(--sidebar-text);
+	font-weight: bold;
+	padding: 2px;
+	margin-bottom: 10px;
+    }
+    .sidebar-text {
+	font-family: Candara;
+	word-wrap: break-word;
+	margin: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    }
+
+/*-----------Search Bar--------------------
+#search {
+	margin-top: 30px;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}*/
+
+/*-----------Main Content------------------*/
+
+content {
+	break-inside: avoid;
+	position: relative;
+	max-width: 1500px;
+	width: 60%;
+	margin: 10px;
+	padding: 22px;
+	top: 39px;
+    }
+
+.content-inner {
+    overflow: hidden;
+    transition: transform .75s;
+    margin-bottom: 50px;
+    background: var(--content);
+    color: var(--content-text);
+    word-wrap: break-word;
+    break-inside: avoid;
+    border-radius: 10px;
+}
+
+
+/*body{
     background: url(https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/background%20scarf.png) #ac794516;
     background-size: 15%;
 	background-repeat: repeat;
@@ -9,10 +130,10 @@ body{
     text-align: center;
     min-width: 10%;
     height: auto;
-}
+}*/
 
 /*Column CSS*/
-.column1 {
+/*.column1 {
     float: left;
     width: 30%;
 }
@@ -24,10 +145,10 @@ body{
     content: "";
     display: table;
     clear: both;
-  }
+  }*/
 
 /*Content*/
-.content-box{
+/*.content-box{
     background-color: #f3dcc6;
     border-radius: 6px;
     margin: auto;
@@ -43,10 +164,10 @@ body{
     border-bottom-left-radius: 7px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    }
+    }*/
 
 /*Index*/
-.content-index{
+/*.content-index{
     background-color: #deb996;
     color: #503421;
     overflow-wrap: break-word;
@@ -61,27 +182,27 @@ body{
     font-family: Candara;
     text-align: left;
     padding: 5px;
-}
+}*/
 
 /*Index Pic*/
-.center {
+/*.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
+  }*/
 
 /*Content*/
-.content{
+/*.content{
     color: #503421;
     overflow-wrap: break-word;
     min-width: 200px;
     max-width: 700px;
     margin: 5px 5px auto;
     font-family: Candara;
-    }
+    }*/
 
-/*Footer*/
+/*----------------Footer-------------*/
 footer {
     margin: 10px auto;
     padding: 0px 5px 0px 5px;
@@ -89,6 +210,6 @@ footer {
     font-size: 10px;
     text-align: center;
     width: min-content;
-    background-color: #deb996;
+    background-color: var(--sidebar);
     border-radius: 6px;
 }
