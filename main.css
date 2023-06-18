@@ -37,7 +37,7 @@
         left: 50%;
         transform: translate(-50%, -50%);bottom: 55%;
         z-index: 2;
-        bottom: 30%;
+        bottom: 65%;
     } 
 
     .portrait img{
@@ -55,9 +55,7 @@
 	align-content: center;
     }
     section {
-	max-width: 300px;
-	margin: 20px;
-	top: 120px;
+	top: 180px;
 	position: relative;
 	right: 30px;
     }
@@ -65,7 +63,8 @@
     sidebar {
 	display: block;
 	min-width: 280px;
-	max-width: 600px;
+	max-width: 300px;
+    min-height: 200px;
 	position: sticky;
 	background-color: var(--sidebar);
 	color: var(--sidebar-text);
@@ -78,7 +77,7 @@
 	font-family: Candara;
 	color: var(--sidebar-text);
 	font-weight: bold;
-    margin-top: 5px;
+    margin-top: 10px;
     }
     .sidebar-text {
 	font-family: Candara;
@@ -101,9 +100,7 @@ content {
 	position: relative;
 	max-width: 1500px;
 	width: 60%;
-	margin: 10px;
-	padding: 22px;
-	top: 39px;
+	top: 70px;
     }
 
 .content-inner {
