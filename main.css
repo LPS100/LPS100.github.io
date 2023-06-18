@@ -33,12 +33,16 @@
         }
     
     .portrait{
-        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);bottom: 55%;
+        z-index: 2;
+        bottom: 30%;
     } 
 
     .portrait img{
-        width: 64px;
-        height: 64px;
+        width: 96px;
+        height: 96px;
         border-radius: 50px;
         }
 /*------------------Body Build-------------------*/
@@ -65,8 +69,7 @@
 	position: sticky;
 	background-color: var(--sidebar);
 	color: var(--sidebar-text);
-	margin: 10px;
-	padding: 13px;
+	padding: 10px;
 	border-radius: 10px;
     }
     .sidebar-title {
@@ -75,15 +78,11 @@
 	font-family: Candara;
 	color: var(--sidebar-text);
 	font-weight: bold;
-	padding: 2px;
-	margin-bottom: 10px;
+    margin-top: 5px;
     }
     .sidebar-text {
 	font-family: Candara;
 	word-wrap: break-word;
-	margin: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
     }
 
 /*-----------Search Bar--------------------
@@ -116,8 +115,27 @@ content {
     word-wrap: break-word;
     break-inside: avoid;
     border-radius: 10px;
+    padding: 5px 5px 5px 25px;
 }
 
+/*----------------Footer-------------*/
+
+.flexfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin: auto;
+    padding: 0px 5px 0px 5px;
+    font-family: Candara;
+    font-size: 10px;
+    text-align: center;
+    width: min-content;
+    background-color: var(--sidebar);
+    border-radius: 6px;
+}
 
 /*body{
     background: url(https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/background%20scarf.png) #ac794516;
@@ -201,22 +219,3 @@ content {
     margin: 5px 5px auto;
     font-family: Candara;
     }*/
-
-/*----------------Footer-------------*/
-
-.flexfooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer {
-    margin: auto;
-    padding: 0px 5px 0px 5px;
-    font-family: Candara;
-    font-size: 10px;
-    text-align: center;
-    width: min-content;
-    background-color: var(--sidebar);
-    border-radius: 6px;
-}
