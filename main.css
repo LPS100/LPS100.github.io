@@ -203,8 +203,15 @@ content {
     }*/
 
 /*----------------Footer-------------*/
+
+.flexfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
-    margin: 10px auto;
+    margin: auto;
     padding: 0px 5px 0px 5px;
     font-family: Candara;
     font-size: 10px;
