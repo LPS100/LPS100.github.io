@@ -10,12 +10,6 @@
     <!--<meta name="image:Background" content="">-->
     <meta name="description" content="Welcome to our Website! This is currently a wip.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="jquery.js"></script> 
-    <script> 
-    $(function(){
-      $("#includedContent").load("about.html"); 
-    });
-    </script> 
 </head>
 <body>
     <main class="flex">
@@ -71,4 +65,10 @@
     var span = document.getElementById('age');
     span.innerHTML = age;
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+<script> 
+$(function(){
+  $("#includedContent").load("about.html"); 
+});
+</script> 
 </html>
