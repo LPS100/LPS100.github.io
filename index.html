@@ -10,6 +10,12 @@
     <!--<meta name="image:Background" content="">-->
     <meta name="description" content="Welcome to our Website! This is currently a wip.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("about.html"); 
+    });
+    </script> 
 </head>
 <body>
     <main class="flex">
@@ -27,7 +33,7 @@
     <!--===================== Content =========================-->
     <content>
         <div class="content-inner">
-            <p>Content Test</p>
+            <div id="includedContent"></div>
         </contentinner>
     </content>
     </main>
