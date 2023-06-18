@@ -79,10 +79,20 @@
 	font-weight: bold;
     margin-top: 10px;
     }
+
+    .sidebar-title h1 {
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(33,21,35,0.5) 25%, rgba(64,42,33,1) 50%, rgba(64,42,50,0.5) 75%, rgba(64,42,33,0) 100%); 1 stretch;
+    }
+
     .sidebar-text {
 	font-family: Candara;
 	word-wrap: break-word;
     }
+
+    /*-------------------Button Area----------------*/
+
 
 /*-----------Search Bar--------------------
 #search {
