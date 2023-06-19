@@ -1,5 +1,8 @@
 @import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
 
+@font-face {font-family: "Candara"; src: url("//db.onlinewebfonts.com/t/e662339992c4abf5b43f537391bd3169.eot"); src: url("//db.onlinewebfonts.com/t/e662339992c4abf5b43f537391bd3169.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e662339992c4abf5b43f537391bd3169.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e662339992c4abf5b43f537391bd3169.woff") format("woff"), url("//db.onlinewebfonts.com/t/e662339992c4abf5b43f537391bd3169.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e662339992c4abf5b43f537391bd3169.svg#Candara") format("svg"); }
+
+/*----------------Root----------------------*/
 :root{
     --background:#3a3131;
     --portrait: url("https://cdn.discordapp.com/attachments/386579091551158272/1110579126617768036/export202305231544451479.png");
@@ -11,6 +14,7 @@
     --content:#a06a33;
     --content-text:#1a1a1a;
     --content-border:#e92525;
+    --font: Candara;
     --url:#fff1e6;
     --url-hover:#fffaf6;
     --url-active:#e7d7cb;
@@ -76,7 +80,7 @@
     .sidebar-title {
 	text-align: center;
 	font-size: 23px;
-	font-family: Candara;
+	font-family: var(--font);
 	color: var(--sidebar-text);
 	font-weight: bold;
     margin-top: 10px;
@@ -89,7 +93,7 @@
     }
 
     .sidebar-text {
-	font-family: Candara;
+	font-family: var(--font);
 	word-wrap: break-word;
     }
 
@@ -138,7 +142,7 @@ content {
 footer {
     margin: auto;
     padding: 0px 5px 0px 5px;
-    font-family: Candara;
+    font-family: var(--font);
     font-size: 10px;
     text-align: center;
     width: min-content;
