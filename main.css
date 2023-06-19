@@ -102,6 +102,7 @@
 
     .sidebar-text {
 	font-family: var(--font);
+	color: var(--sidebar-text);
 	word-wrap: break-word;
     }
 
