@@ -22,6 +22,9 @@
     --content:#a06a33;
     --content-text:#1a1a1a;
     --content-border:#e92525;
+    --button: #653717;
+    --button-hover: #914f21;
+    --button-active: #502c12;
     --font: 'Candara';
     --url:#fff1e6;
     --url-hover:#fffaf6;
@@ -39,11 +42,11 @@
         background-attachment: fixed;
         background-repeat:repeat;
         background-size: 40%;
-        }
-        
-    .flex {
-        display:flex;
-        flex-wrap:nowrap;
+        display: grid;
+        grid-template-columns: 500px 900px;
+        grid-template-rows: 600px 100px;
+        justify-content: center;
+        align-content: center;
         }
     
         .portrait {
@@ -51,7 +54,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 2;
-            bottom: 70%;
+            bottom: 60%;
         }
 
         .portrait img {
@@ -62,14 +65,11 @@
             padding: 5px;
         }
 /*------------------Body Build-------------------*/
-    main {
-	    justify-content: center;
-	    align-content: center;
-    }
     section {
-        top: 210px;
+        display: grid;
+        justify-content: center;
+        top: 120px;
         position: relative;
-        right: 60px;
     }
 /*------------------Sidebar-------------------*/
     sidebar {
@@ -77,6 +77,7 @@
 	    min-width: 280px;
 	    max-width: 300px;
         min-height: 200px;
+        max-height: 300px;
 	    position: sticky;
 	    background-color: var(--sidebar);
 	    padding: 10px;
@@ -85,63 +86,82 @@
         --notchSizeTop01: 40px;
         --notchSizeTop02: 120px;
         --notchSizeBottom: 20px;
-        clip-path: polygon( 0% var(--notchSizeTop01), var(--notchSizeTop02) 0%, 
-        calc(100% - var(--notchSizeTop02)) 0%, 100% var(--notchSizeTop01), 
-        100% calc(100% - var(--notchSizeBottom)), calc(100% - var(--notchSizeBottom)) 100%, 
-        var(--notchSizeBottom) 100%, 0% calc(100% - var(--notchSizeBottom)) );
+        clip-path: 
+            polygon( 
+                0% var(--notchSizeTop01), var(--notchSizeTop02) 0%, 
+                calc(100% - var(--notchSizeTop02)) 0%, 100% var(--notchSizeTop01), 
+                100% calc(100% - var(--notchSizeBottom)), calc(100% - var(--notchSizeBottom)) 100%, 
+                var(--notchSizeBottom) 100%, 0% calc(100% - var(--notchSizeBottom)) 
+                );
     }
     .sidebar-title {
         text-align: center;
-        font-size: 23px;
+        font-size: xx-large;
         font-family: var(--font);
-        color: var(--sidebar-text);
         font-weight: bold;
-        margin-top: 3px;
-    }
-
-    .sidebar-title h1 {
+        color: var(--sidebar-text);
         border-bottom: 2px solid transparent;
         border-image: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(33,21,35,0.5) 25%, rgba(64,42,33,1) 50%, rgba(64,42,50,0.5) 75%, rgba(64,42,33,0) 100%) 1 stretch;
+        margin: 10px;
     }
 
     .sidebar-text {
         font-family: var(--font);
+        text-align: center;
         color: var(--sidebar-text);
         word-wrap: break-word;
+        border-bottom: 3px solid transparent;
+        border-image: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(33,21,35,0.5) 25%, rgba(64,42,33,1) 50%, rgba(64,42,50,0.5) 75%, rgba(64,42,33,0) 100%) 1 stretch;
+        padding: 10px 10px 15px 10px;
     }
 
-    .divider {
-        border-bottom: 3px solid transparent;
-        border-image: linear-gradient(90deg, rgba(2,0,36,0) 10%, rgba(33,21,35,0.5) 30%, rgba(64,42,33,1) 50%, rgba(64,42,50,0.5) 70%, rgba(64,42,33,0) 90%) 1 stretch;
-    }
     /*-------------------Button Area----------------*/
     .index {
-        display: grid;
         background-color: var(--content);
+        padding: 10px;
         min-width: 100px;
         max-width: 280px;
-        min-height: 150px;
-        margin: 20px auto auto auto;
+        min-height: 120px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         --notchSize: 20px;
         clip-path: 
             polygon( 
-                0% var(--notchSize), var(--notchSize) 0%, 
+                0% 0%, 0% 0%, 
+                100% 0%, 100% 0%, 
+                100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 
+                var(--notchSize) 100%, 0% calc(100% - var(--notchSize)) 
+            );
+    }
+
+    .buttongrid {
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 50px 50px;
+        grid-gap: 20px 20px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .button {
+        background-color: var(--button);
+        transition-duration: 0.1s;
+        --notchSize: 10px;
+        clip-path: 
+            polygon( 
+                0% 0%, 0% 0%, 
                 calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 
                 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 
                 var(--notchSize) 100%, 0% calc(100% - var(--notchSize)) 
             );
     }
 
-    grid {
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        grid-column: 2;
-        grid-row: 2;
-        grid-gap: 4px;
+    .button:hover {
+        background-color: var(--button-hover);
     }
 
-    .button {
-
+    .button:active {
+        background-color: var(--button-active);
     }
 
 
@@ -159,15 +179,12 @@
 content {
 	break-inside: avoid;
 	position: relative;
-	max-width: 1500px;
-	width: 60%;
-	top: 70px;
-    }
+	max-width: 900px;
+    max-height: 300px;
+	top: 90px;
+}
 
 .content-inner {
-    overflow: hidden;
-    transition: transform .75s;
-    margin-bottom: 50px;
     background: var(--content);
     color: var(--content-text);
     word-wrap: break-word;
@@ -178,13 +195,11 @@ content {
 
 /*----------------Footer-------------*/
 
-.flexfooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 footer {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-start: 2;
     margin: auto;
     padding: 0px 5px 0px 5px;
     font-family: var(--font);
@@ -194,86 +209,3 @@ footer {
     background-color: var(--sidebar);
     border-radius: 6px;
 }
-
-/*body{
-    background: url(https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/background%20scarf.png) #ac794516;
-    background-size: 15%;
-	background-repeat: repeat;
-    background-blend-mode: multiply;
-	}
-.header {
-    padding: 15px;
-    text-align: center;
-    min-width: 10%;
-    height: auto;
-}*/
-
-/*Column CSS*/
-/*.column1 {
-    float: left;
-    width: 30%;
-}
-.column2 {
-    float: left;
-    width: 70%;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }*/
-
-/*Content*/
-/*.content-box{
-    background-color: #f3dcc6;
-    border-radius: 6px;
-    margin: auto;
-    max-width: 900px;
-    min-height: 400px;
-    }
-.content-header{
-    color: #503421;
-    margin: auto 50px;
-    padding: 20px 5px 1px 30px;
-    text-align: left;
-    border-bottom: 2px #ac7945 ridge;
-    border-bottom-left-radius: 7px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    }*/
-
-/*Index*/
-/*.content-index{
-    background-color: #deb996;
-    color: #503421;
-    overflow-wrap: break-word;
-    min-height: 40px;
-    min-width: 40px;
-    max-width: 200px;
-    margin: 10px 30px auto;
-    border-right: 2px #ac7945 ridge;
-    border-radius: 7px;
-    }
-.content-index p {
-    font-family: Candara;
-    text-align: left;
-    padding: 5px;
-}*/
-
-/*Index Pic*/
-/*.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }*/
-
-/*Content*/
-/*.content{
-    color: #503421;
-    overflow-wrap: break-word;
-    min-width: 200px;
-    max-width: 700px;
-    margin: 5px 5px auto;
-    font-family: Candara;
-    }*/
