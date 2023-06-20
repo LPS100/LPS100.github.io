@@ -12,7 +12,7 @@
 
 /*----------------Root----------------------*/
 :root{
-    --background:#3a3131;
+    --background:#2b151f;
     --portrait: url("https://cdn.discordapp.com/attachments/386579091551158272/1110579126617768036/export202305231544451479.png");
     --sidebar:#f2d1af;
     --sidebar-text:#333333;
@@ -46,67 +46,103 @@
         flex-wrap:nowrap;
         }
     
-    .portrait{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);bottom: 55%;
-        z-index: 2;
-        bottom: 65%;
-    } 
+        .portrait {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            bottom: 70%;
+        }
 
-    .portrait img{
-        width: 96px;
-        height: 96px;
-        border-radius: 50px;
+        .portrait img {
+            width: 135px;
+            border-radius: 100px;
+            margin-top: -30px;
+            background-color: white;
+            padding: 5px;
         }
 /*------------------Body Build-------------------*/
     main {
-	width: 100%;
-	max-width: 1400px;
-	margin: auto;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
+	    width: 100%;
+	    margin: auto;
+	    align-items: center;
+	    justify-content: center;
+	    align-content: center;
     }
     section {
-	top: 180px;
-	position: relative;
-	right: 30px;
+        top: 180px;
+        position: relative;
+        right: 30px;
     }
 /*------------------Sidebar-------------------*/
     sidebar {
-	display: block;
-	min-width: 280px;
-	max-width: 300px;
-    min-height: 200px;
-	position: sticky;
-	background-color: var(--sidebar);
-	padding: 10px;
-	border-radius: 10px;
+	    display: block;
+	    min-width: 280px;
+	    max-width: 300px;
+        min-height: 200px;
+	    position: sticky;
+	    background-color: var(--sidebar);
+	    padding: 10px;
+    }
+    .corners {
+        --notchSizeTop01: 40px;
+        --notchSizeTop02: 120px;
+        --notchSizeBottom: 20px;
+        clip-path: polygon( 0% var(--notchSizeTop01), var(--notchSizeTop02) 0%, 
+        calc(100% - var(--notchSizeTop02)) 0%, 100% var(--notchSizeTop01), 
+        100% calc(100% - var(--notchSizeBottom)), calc(100% - var(--notchSizeBottom)) 100%, 
+        var(--notchSizeBottom) 100%, 0% calc(100% - var(--notchSizeBottom)) );
     }
     .sidebar-title {
-	text-align: center;
-	font-size: 23px;
-	font-family: var(--font);
-	color: var(--sidebar-text);
-	font-weight: bold;
-    margin-top: 10px;
+        text-align: center;
+        font-size: 23px;
+        font-family: var(--font);
+        color: var(--sidebar-text);
+        font-weight: bold;
+        margin-top: 3px;
     }
 
     .sidebar-title h1 {
-    width: 100%;
-    font-weight: bold;
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(33,21,35,0.5) 25%, rgba(64,42,33,1) 50%, rgba(64,42,50,0.5) 75%, rgba(64,42,33,0) 100%) 1 stretch;
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(33,21,35,0.5) 25%, rgba(64,42,33,1) 50%, rgba(64,42,50,0.5) 75%, rgba(64,42,33,0) 100%) 1 stretch;
     }
 
     .sidebar-text {
-	font-family: var(--font);
-	color: var(--sidebar-text);
-	word-wrap: break-word;
+        font-family: var(--font);
+        color: var(--sidebar-text);
+        word-wrap: break-word;
     }
 
+    .divider {
+        border-bottom: 3px solid transparent;
+        border-image: linear-gradient(90deg, rgba(2,0,36,0) 10%, rgba(33,21,35,0.5) 30%, rgba(64,42,33,1) 50%, rgba(64,42,50,0.5) 70%, rgba(64,42,33,0) 90%) 1 stretch;
+    }
     /*-------------------Button Area----------------*/
+    .index {
+        background-color: var(--content);
+        min-width: 100px;
+        max-width: 280px;
+        min-height: 150px;
+        margin: 20px auto auto auto;
+        --notchSize: 20px;
+        clip-path: 
+            polygon( 
+                0% var(--notchSize), var(--notchSize) 0%, 
+                calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 
+                100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 
+                var(--notchSize) 100%, 0% calc(100% - var(--notchSize)) 
+            );
+    }
+
+    .index-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .button {
+
+    }
 
 
 /*-----------Search Bar--------------------
