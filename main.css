@@ -63,16 +63,13 @@
         }
 /*------------------Body Build-------------------*/
     main {
-	    width: 100%;
-	    margin: auto;
-	    align-items: center;
 	    justify-content: center;
 	    align-content: center;
     }
     section {
-        top: 180px;
+        top: 210px;
         position: relative;
-        right: 30px;
+        right: 60px;
     }
 /*------------------Sidebar-------------------*/
     sidebar {
@@ -119,6 +116,7 @@
     }
     /*-------------------Button Area----------------*/
     .index {
+        display: grid;
         background-color: var(--content);
         min-width: 100px;
         max-width: 280px;
@@ -134,10 +132,12 @@
             );
     }
 
-    .index-grid {
-        display: grid;
+    grid {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
+        grid-column: 2;
+        grid-row: 2;
+        grid-gap: 4px;
     }
 
     .button {
