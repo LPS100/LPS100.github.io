@@ -247,6 +247,21 @@ content {
     padding: 5px 5px 5px 25px;
 }
 
+.content-title {
+    width: 100%;
+	font-family: var(--font);
+    font-weight: bold;
+	color: var(--content-text);
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(33,21,35,0.5) 25%, rgba(64,42,33,1) 50%, rgba(64,42,50,0.5) 75%, rgba(64,42,33,0) 100%) 1 stretch;
+}
+
+.content-text {
+	font-family: var(--font);
+	color: var(--content-text);
+	word-wrap: break-word;
+}
+
 /*----------------Footer-------------*/
 
 footer {
