@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Showcase
-permalink: /showcase/
+title: About the Fluffian
+permalink: /aboutme/
 ---
