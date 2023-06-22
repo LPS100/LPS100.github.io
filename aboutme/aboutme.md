@@ -2,4 +2,71 @@
 permalink: /aboutme/
 ---
 
-Why do you keep breakinggggg
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About the Fluffian</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/aboutme.css">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/Terrible%20Terror.ico">
+    <meta name="keywords" content="LPS100">
+    <!--<meta name="image:Background" content="">-->
+    <meta name="description" content="Information and Contact.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <section>
+        <div id="overlay">
+            <div class="portrait">
+                <img src="https://cdn.discordapp.com/attachments/386579091551158272/1110579126617768036/export202305231544451479.png">
+            </div>
+        </div>
+        <sidebar class="corners">
+            <div class="sidebar-title">Index</div>
+            <div class="sidebar-text"></div>
+    </div>
+    <div class="index">
+        <div class="divider"></div>
+        <div class="buttongrid">
+            <button class="button">
+                <a href="/">Home</a>
+            </button>
+            <button class="button">
+                <a href="/portfolio/">Portfolio</a>
+            </button>
+            <button class="button">
+                <a href="https://github.com/LPS100/LPS100.github.io">Repo</a>
+            </button>
+        </div>
+    </div>
+</sidebar>
+</section>
+<!--===================== Content =========================-->
+<content>
+    <div class="content-inner">
+        <div id="aboutmepage"></div>
+    </div>
+</content>
+<footer>
+    <p><a href="https://github.com/LPS100/LPS100.github.io">My Repository</a></p>
+</footer>
+</body>
+
+<script type="text/javascript">
+var birth = new Date('1999, 12, 28');
+var now = new Date();
+var difference = now - birth;
+// Dates are set from 1970, so remove that to get the year 
+var age = new Date(difference).getFullYear() - 1970
+
+var span = document.getElementById('age');
+span.innerHTML = age;
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+<script> 
+$(function(){
+$("#aboutmepage").load("aboutmepage.html"); 
+});
+</script> 
+</html>
