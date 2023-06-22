@@ -1,3 +1,4 @@
 ---
-permalink: /aboutme/
+permalink: /aboutme
+baseurl: /aboutme.html
 ---
