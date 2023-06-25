@@ -74,7 +74,7 @@
 /*------------------Sidebar-------------------*/
     sidebar {
 	    display: block;  
-        border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1122655281197879337/edvrian_bg.webp');
+        border-image-source: url('https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/edvrian%20bg.webp');
         border-image-slice: 0% fill;
         border-image-outset: 5px;
 	    min-width: 280px;
@@ -237,7 +237,7 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1122635277261885631/hoston_content.png');
+    border-image-source: url('https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/hoston%20content.png');
     border-image-slice: 30 fill;
     border-image-width: 30px;
     border-image-outset: 10px;
@@ -255,7 +255,7 @@
     break-inside: avoid;
     padding: 5px 5px 5px 25px;
     margin: 5px;
-    border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1122633364424372244/hoston_background_02.png');
+    border-image-source: url('https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/hoston%20background%2001.png');
     border-image-slice: 30 fill;
     border-image-width: 20px;
     border-image-outset: 5px;
