@@ -1,5 +1,6 @@
 h1 {
 	font-family: var(--font);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	color: var(--content-text);
 	border-bottom: 2px solid transparent;
 	border-image: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(244,244,244,0.8) 20%, rgba(244,244,244,0.6) 40%, rgba(244,244,244,0.4) 60%, rgba(244,244,244,0.2) 80%, rgba(244,244,244,0) 100%) 1 stretch;
@@ -7,6 +8,7 @@ h1 {
 
 h2 {
     font-family: var(--font);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	color: var(--content-text);
 	border-bottom: 2px solid transparent;
 	border-image: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(244,244,244,0.78) 18%, rgba(244,244,244,0.58) 38%, rgba(244,244,244,0.38) 58%, rgba(244,244,244,0.18) 78%, rgba(244,244,244,0) 98%) 1 stretch;
@@ -14,6 +16,7 @@ h2 {
 
 h3 {
     font-family: var(--font);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	color: var(--content-text);
 	border-bottom: 2px solid transparent;
 	border-image: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(244,244,244,0.74) 14%, rgba(244,244,244,0.54) 34%, rgba(244,244,244,0.34) 54%, rgba(244,244,244,0.14) 74%, rgba(244,244,244,0) 94%) 1 stretch;
@@ -21,6 +24,7 @@ h3 {
 
 h4 {
     font-family: var(--font);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	color: var(--content-text);
 	border-bottom: 2px solid transparent;
 	border-image: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(244,244,244,0.7) 10%, rgba(244,244,244,0.5) 30%, rgba(244,244,244,0.3) 50%, rgba(244,244,244,0.1) 70%, rgba(244,244,244,0) 90%) 1 stretch;
@@ -28,6 +32,7 @@ h4 {
 
 h5 {
     font-family: var(--font);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	color: var(--content-text);
 	border-bottom: 2px solid transparent;
 	border-image: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(244,244,244,0.68) 8%, rgba(244,244,244,0.48) 28%, rgba(244,244,244,0.28) 48%, rgba(244,244,244,0.08) 68%, rgba(244,244,244,0) 88%) 1 stretch;
@@ -35,6 +40,7 @@ h5 {
 
 h6 {
     font-family: var(--font);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	color: var(--content-text);
 	border-bottom: 2px solid transparent;
 	border-image: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(244,244,244,0.64) 4%, rgba(244,244,244,0.44) 24%, rgba(244,244,244,0.24) 44%, rgba(244,244,244,0.04) 64%, rgba(244,244,244,0) 84%) 1 stretch;
