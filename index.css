@@ -43,7 +43,7 @@
         background-size: 40%;
         display: grid;
         grid-template-columns: 400px 1000px;
-        grid-template-rows: 600px 100px;
+        grid-template-rows: auto 100px;
         justify-content: center;
         align-content: center;
         }
@@ -53,7 +53,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 2;
-            bottom: 60%;
+            bottom: 70%;
         }
 
     .portrait img {
@@ -67,19 +67,21 @@
     section {
         display: grid;
         justify-content: center;
-        top: 120px;
         position: relative;
         right: 5%;
+        top: 25%;
     }
 /*------------------Sidebar-------------------*/
     sidebar {
-	    display: block;
+	    display: block;  
+        border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1122655281197879337/edvrian_bg.webp');
+        border-image-slice: 0% fill;
+        border-image-outset: 5px;
 	    min-width: 280px;
 	    max-width: 300px;
         min-height: 200px;
         max-height: 300px;
 	    position: sticky;
-	    background-color: var(--sidebar);
 	    padding: 10px;
     }
     .corners {
@@ -231,6 +233,10 @@
 /*-----------Main Content------------------*/
 
 #content {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
     border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1122635277261885631/hoston_content.png');
     border-image-slice: 30 fill;
     border-image-width: 30px;
@@ -238,8 +244,8 @@
 	break-inside: avoid;
 	position: relative;
 	max-width: 900px;
-	top: 60%; 
-    left: 45%; 
+	top: 55%; 
+    left: 48%; 
     transform: translate(-50%, -50%);
     padding: 5px;
 }
@@ -258,12 +264,9 @@
 /*----------------Footer-------------*/
 
 #footer {
-    display: grid;
-    align-content: center;
-    position: relative;
-    left: 100%;
-    transform: translate(50%);
-    top: 55%;
+	display: grid;
+	position: relative;
+	top: -55%;
 }
 
 .footer-container {
