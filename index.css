@@ -41,6 +41,9 @@
         background-attachment: fixed;
         background-repeat:repeat;
         background-size: 40%;
+        }
+
+    .wrapper {
         display: grid;
         grid-template-columns: 400px 1000px;
         grid-template-rows: auto 100px;
@@ -64,15 +67,17 @@
             padding: 5px;
         }
 
-    section {
+    .section {
         display: grid;
-        justify-content: center;
-        position: relative;
-        right: 5%;
-        top: 25%;
+        position: fixed;
+        height: auto;
+        left: 0;
+        top: 50%;
+        margin-top: -100px;
+        transform: translate(15%, 0%);
     }
 /*------------------Sidebar-------------------*/
-    sidebar {
+    .sidebar {
 	    display: block;  
         border-image-source: url('https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/edvrian%20bg.webp');
         border-image-slice: 0% fill;
@@ -81,20 +86,7 @@
 	    max-width: 300px;
         min-height: 200px;
         max-height: 300px;
-	    position: sticky;
 	    padding: 10px;
-    }
-    .corners {
-        --notchSizeTop01: 40px;
-        --notchSizeTop02: 120px;
-        --notchSizeBottom: 20px;
-        clip-path: 
-            polygon( 
-                0% var(--notchSizeTop01), var(--notchSizeTop02) 0%, 
-                calc(100% - var(--notchSizeTop02)) 0%, 100% var(--notchSizeTop01), 
-                100% calc(100% - var(--notchSizeBottom)), calc(100% - var(--notchSizeBottom)) 100%, 
-                var(--notchSizeBottom) 100%, 0% calc(100% - var(--notchSizeBottom)) 
-                );
     }
     .sidebar-title {
         text-align: center;
@@ -244,9 +236,7 @@
 	break-inside: avoid;
 	position: relative;
 	max-width: 900px;
-	top: 55%; 
-    left: 48%; 
-    transform: translate(-50%, -50%);
+    margin-top: 5%;
     padding: 5px;
 }
 
