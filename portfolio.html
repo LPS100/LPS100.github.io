@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fluffian's Portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/index.css">
+    <meta property="og:url" content="https://lps100.github.io/portfolio">
+    <meta property="og:site_name" content="Fluffian's Portfolio">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/Terrible%20Terror.ico">
+    <!--<meta name="image:Background" content="">-->
+    <meta name="description" content="Contact Information.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="wrapper">
+    <div class="section">
+        <div class="sidebar">
+            <div id="overlay">
+                <div class="portrait">
+                    <img src="https://cdn.discordapp.com/attachments/386579091551158272/1110579126617768036/export202305231544451479.png">
+                </div>
+            </div>
+            <div class="sidebar-title">Index</div>
+            <div id="sidebartext"></div>
+            <div class="index">
+                <div class="divider"></div>
+                <div class="buttongrid">
+                    <button class="button">
+                        <a href="/">Home</a>
+                    </button><button class="button">
+                        <a href="/aboutme">About</a>
+                    </button>
+                    <button class="button">
+                        <a href="https://github.com/LPS100/LPS100.github.io">Repo</a>
+                    </button>
+                </div>
+            </div>
+            <div class="footer-container">
+                <div id="footer"></div>
+            </div>
+        </div>
+    </div>
+<!--===================== Content =========================-->
+<div id="content">
+    <div class="content-inner">
+    <div id="portfolio"></div>
+</div>
+</div>
+</div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+<script> 
+$(function(){
+    $("#portfolio").load("portfoliopage.html");
+    $("#sidebartext").load("sidebartext.html");
+    $("#footer").load("footer.html");
+});
+</script> 
+</html>
