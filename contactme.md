@@ -1,4 +1,4 @@
 ---
-permalink: /contact.html
-baseurl: /contact
+permalink: /contactme.html
+baseurl: /contactme
 ---
