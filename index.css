@@ -9,6 +9,7 @@
     --content-inner: #596f1a;
     --content-outer: #f4f4f4;
     --content-text:#f4f4f4;
+    --shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     --button: #653717;
     --button-hover: #914f21;
     --button-active: #502c12;
@@ -125,7 +126,7 @@
         font-family: var(--font);
         font-size: large;
         font-weight: bold;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        text-shadow: var(--shadow);
         text-transform: uppercase;
         max-width: 120px;
         max-height: 50px;

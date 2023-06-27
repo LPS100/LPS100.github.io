@@ -7,7 +7,7 @@
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
-  padding: 4px;
+  padding: 10px;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -25,6 +25,14 @@
 
 /* Content */
 .imgbox {
-  background-color: white;
+  border-image-slice: 0 fill;
+  border-image-outset: 5px;
+  border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1123368994003488768/hoston_portfolio_img.webp');
   padding: 10px;
+}
+
+.desc {
+  border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1123370923244921002/hoston_portfolio_desc.webp');
+  border-image-slice: 10 fill;
+  border-image-outset: 5px;
 }
