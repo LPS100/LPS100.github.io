@@ -127,6 +127,8 @@
         font-weight: bold;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         text-transform: uppercase;
+        max-width: 120px;
+        max-height: 50px;
         transition-duration: 0.1s;
         --notchSize: 10px;
         clip-path: 
@@ -136,6 +138,14 @@
                 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 
                 var(--notchSize) 100%, 0% calc(100% - var(--notchSize)) 
             );
+    }
+
+    .button:last-child {
+        grid-column: 1 / span 2;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
     }
 
     .button:hover {
