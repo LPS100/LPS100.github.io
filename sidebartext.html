@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/main.css">
+    <!--<meta name="image:Background" content="">-->
+</head>
+
+<body>
+<div class="sidebar-text">Hi, this is a paragraph test with line wrap and some infodump. Age test, <span id="age">age</span>.</div>
+</body>
+
+<script type="text/javascript">
+    var birth = new Date('1939, 11, 28');
+    var now = new Date();
+    var difference = now - birth;
+    // Dates are set from 1970, so remove that to get the year 
+    var age = new Date(difference).getFullYear() - 1970
+
+    var span = document.getElementById('age');
+    span.innerHTML = age;
+</script>

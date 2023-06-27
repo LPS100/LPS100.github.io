@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="sidebar-title">Index</div>
-            <div class="sidebar-text">Hi, this is a paragraph test with line wrap and some infodump. Age test, <span id="age">age</span>.</div>
+            <div id="sidebartext"></div>
             <div class="index">
                 <div class="divider"></div>
                 <div class="buttongrid">
@@ -38,33 +38,24 @@
                 </div>
             </div>
             <div class="footer-container">
-                <p>Ahreiugthgiuthggdfhthrajysmhrgh</p>
+                <div id="footer"></div>
             </div>
         </div>
     </div>
 <!--===================== Content =========================-->
 <div id="content">
     <div class="content-inner">
-    <div id="aboutpage"></div>
-</div>
+        <div id="aboutme"></div>
+    </div>
 </div>
 </div>
 </body>
-
-<script type="text/javascript">
-var birth = new Date('1939, 11, 28');
-var now = new Date();
-var difference = now - birth;
-// Dates are set from 1970, so remove that to get the year 
-var age = new Date(difference).getFullYear() - 1970
-
-var span = document.getElementById('age');
-span.innerHTML = age;
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
 <script> 
 $(function(){
-    $("#aboutpage").load("aboutpage.html"); 
+  $("#aboutme").load("aboutpage.html");
+  $("#sidebartext").load("sidebartext.html");
+  $("#footer").load("footer.html");
 });
 </script> 
 </html>

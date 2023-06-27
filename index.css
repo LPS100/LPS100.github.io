@@ -28,10 +28,6 @@
     --url:#fff1e6;
     --url-hover:#fffaf6;
     --url-active:#e7d7cb;
-    --title:#a2f1cb;
-    --scrollbar:var(--Accent);
-    --accent:#f2992e;
-    --sub-accent:#ffb2b2;
     }
 
 /*------------------Body Build-------------------*/
@@ -107,26 +103,19 @@
         word-wrap: break-word;
         border-bottom: 3px solid transparent;
         border-image: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(33,21,35,0.5) 25%, rgba(64,42,33,1) 50%, rgba(64,42,50,0.5) 75%, rgba(64,42,33,0) 100%) 1 stretch;
-        padding: 15px 10px 20px 10px;
+        padding: 8px 10px 12px 10px;
     }
 
     /*-------------------Button Area----------------*/
     .index {
-        background-color: var(--index);
+        border-image-source: url('https://media.discordapp.net/attachments/778281142415392799/1123245214442717235/edvrian_index_bg.webp');
+        border-image-slice: 0% fill;
+        border-image-outset: 12px;
+        margin: auto;
         padding: 10px;
         min-width: 100px;
         max-width: 280px;
         min-height: 120px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        --notchSize: 20px;
-        clip-path: 
-            polygon( 
-                0% 0%, 0% 0%, 
-                100% 0%, 100% 0%, 
-                100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 
-                var(--notchSize) 100%, 0% calc(100% - var(--notchSize)) 
-            );
     }
 
     .buttongrid {
@@ -260,12 +249,12 @@
 }
 
 .footer-container {
-    margin: auto;
-    font-family: var(--font);
-    font-size: 10px;
-    text-align: center;
-    width: min-content;
-    min-width: 90px;
-    background-color: var(--sidebar);
-    border-radius: 6px;
+	margin: auto;
+	color: var(--sidebar-text);
+	font-family: var(--font);
+	font-size: 10px;
+	text-align: center;
+	border-radius: 6px;
+    word-break: break-word;
+    max-width: 220px;
 }
