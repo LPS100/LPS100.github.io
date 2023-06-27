@@ -78,10 +78,9 @@
         font-family: var(--font);
         font-weight: bold;
         color: var(--sidebar-text);
-        border-bottom: 2px solid transparent;
+        border-bottom: 3px solid transparent;
         border-image: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(33,21,35,0.5) 25%, rgba(64,42,33,1) 50%, rgba(64,42,50,0.5) 75%, rgba(64,42,33,0) 100%) 1 stretch;
-        margin: 10px;
-        padding-top: 10px;
+        margin: auto;
     }
 
     .sidebar-text {
@@ -89,9 +88,10 @@
         text-align: center;
         color: var(--sidebar-text);
         word-wrap: break-word;
-        border-bottom: 3px solid transparent;
-        border-image: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(33,21,35,0.5) 25%, rgba(64,42,33,1) 50%, rgba(64,42,50,0.5) 75%, rgba(64,42,33,0) 100%) 1 stretch;
-        padding: 8px 10px 12px 10px;
+        min-width: 130px;
+        margin: 25px auto 5px auto;
+        padding: 7px;
+        max-width: 120px;
     }
 
     /*-------------------Button Area----------------*/
@@ -103,7 +103,7 @@
         padding: 10px;
         min-width: 100px;
         max-width: 280px;
-        min-height: 120px;
+        min-height: 130px;
     }
 
     .buttongrid {
@@ -113,6 +113,7 @@
         grid-gap: 10px;
         justify-content: center;
         align-content: center;
+        padding-top: 5px;
     }
 
     .button {
