@@ -1,18 +1,26 @@
 @import "content.css";
-
+/*===================Row & Columns====================*/
 .row {
   margin: auto;
+  margin-top: 15px;
+  border-image-slice: 160 fill;
+  border-image-outset: 5px;
+  border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1123368994003488768/hoston_portfolio_img.webp');
+  border-image-width: 30px;
+  max-width: 800px;
+  overflow: scroll;
 }
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
   padding: 10px;
+  display: inline-block;
+  height: 250px;
 }
 
 /* Create four equal columns that floats next to each other */
 .column {
-  float: left;
   width: 20%
 }
 
@@ -23,16 +31,25 @@
   clear: both;
 }
 
-/* Content */
+/* ========================Content======================== */
 .imgbox {
-  border-image-slice: 0 fill;
-  border-image-outset: 5px;
-  border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1123368994003488768/hoston_portfolio_img.webp');
-  padding: 10px;
+  padding: 5px;
+  min-width: 150px;
 }
 
 .desc {
+  position: relative;
+  z-index: 2;
   border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1123370923244921002/hoston_portfolio_desc.webp');
-  border-image-slice: 10 fill;
+  border-image-slice: 120 fill;
   border-image-outset: 5px;
+  padding: 5px;
+  border-image-width: 20px;
+}
+
+p {
+	font-family: var(--font);
+	color: var(--content-text);
+	text-align: center;
+	word-wrap: break-word;
 }
