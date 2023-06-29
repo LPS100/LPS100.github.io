@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Candara;
+    src: url('/Candara.ttf') format('ttf');
+}
+
 /*----------------Root----------------------*/
 :root{
     --background:#2b151f;
