@@ -229,10 +229,9 @@
     border-image-outset: 10px;
 	break-inside: avoid;
 	position: relative;
-	position: relative;
 	max-width: max-content;
 	padding: 5px;
-	margin: 5% 1% 1%;
+	margin: 5% 5% 1% 1%
 }
 
 .content-inner {
