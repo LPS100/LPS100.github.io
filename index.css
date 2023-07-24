@@ -35,7 +35,7 @@
 
     .wrapper {
         display: grid;
-        grid-template-columns: 400px 1000px;
+        grid-template-columns: 400px auto;
         grid-template-rows: auto 100px;
         justify-content: center;
         align-content: center;
@@ -229,9 +229,10 @@
     border-image-outset: 10px;
 	break-inside: avoid;
 	position: relative;
-	max-width: 900px;
-    margin-top: 5%;
-    padding: 5px;
+	position: relative;
+	max-width: max-content;
+	padding: 5px;
+	margin: 5% 1% 1%;
 }
 
 .content-inner {
