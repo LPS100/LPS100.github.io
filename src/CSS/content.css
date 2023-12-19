@@ -1,4 +1,4 @@
-@import "src/CSS/root.css";
+@import "../CSS/root.css";
 
 h1 {
 	font-family: var(--font);
