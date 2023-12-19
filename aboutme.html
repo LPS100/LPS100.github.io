@@ -18,11 +18,7 @@
     <div class="wrapper">
     <div class="section">
         <div class="sidebar">
-            <div id="overlay">
-                <div class="portrait">
-                    <img src="./src/Assets/edvrian_icon_2023.png">
-                </div>
-            </div>
+            <div id="portrait"></div>
             <div id="sidebartext"></div>
             <div class="sidebar-title">Index</div>
             <div class="index">
@@ -55,8 +51,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
 <script> 
 $(function(){
-  $("#aboutme").load("aboutpage.html");
-  $("#sidebartext").load("indextext.html");
+  $("#aboutme").load("about_page.html");
+  $("#portrait").load("sidebar_portrait.html");
+  $("#sidebartext").load("sidebar.html");
   $("#footer").load("footer.html");
 });
 </script> 
