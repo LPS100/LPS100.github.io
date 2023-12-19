@@ -1,4 +1,4 @@
-@import "/src/CSS/content.css";
+@import "../CSS/content.css";
 /*===================Row & Columns====================*/
 .row {
   margin: auto;
