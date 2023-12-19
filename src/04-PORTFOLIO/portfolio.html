@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact the Fluffian</title>
+    <title>Fluffian's Portfolio</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/index.css">
-    <link rel="preload" as="font" href="/Candara.ttf" type="font/ttf" crossorigin>
-    <meta property="og:url" content="https://lps100.github.io/contactme">
-    <meta property="og:site_name" content="Contact the Fluffian">
+    <link rel="stylesheet" href="/src/CSS/root.css">
+    <link rel="preload" as="font" href="/src/ASSETS/Candara.ttf" type="font/ttf" crossorigin>
+    <meta property="og:url" content="https://lps100.github.io/portfolio">
+    <meta property="og:site_name" content="Fluffian's Portfolio">
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/Terrible%20Terror.ico">
     <!--<meta name="image:Background" content="">-->
     <meta name="description" content="Contact Information.">
@@ -19,7 +19,7 @@
         <div class="sidebar">
             <div id="overlay">
                 <div class="portrait">
-                    <img src="https://cdn.discordapp.com/attachments/386579091551158272/1110579126617768036/export202305231544451479.png">
+                    <img src="/src/ASSETS/edvrian icon 2023.png">
                 </div>
             </div>
             <div id="sidebartext"></div>
@@ -33,7 +33,7 @@
                         <a href="/aboutme">About</a>
                     </button>
                     <button class="button endbutton">
-                        <a href="/portfolio">Portfolio</a>
+                        <a href="/contactme">Contact</a>
                     </button>
                 </div>
             </div>
@@ -45,7 +45,7 @@
 <!--===================== Content =========================-->
 <div id="content">
     <div class="content-inner">
-    <div id="contact"></div>
+    <div id="portfolio"></div>
 </div>
 </div>
 </div>
@@ -54,9 +54,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
 <script> 
 $(function(){
-    $("#contact").load("contactpage.html");
-    $("#sidebartext").load("sidebartext.html");
-    $("#footer").load("footer.html");
+    $("#portfolio").load("/src/04-PORTFOLIO/portfoliopage.html");
+    $("#sidebartext").load("/src/00-INDEX/indextext.html");
+    $("#footer").load("/src/06-OTHER/footer.html");
 });
 </script> 
 </html>

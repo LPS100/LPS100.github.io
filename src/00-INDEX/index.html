@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>About the Fluffian</title>
+ <head>
+    <title>A Fluffian's Cove</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/index.css">
-    <link rel="preload" as="font" href="/Candara.ttf" type="font/ttf" crossorigin>
-    <meta property="og:url" content="https://lps100.github.io/aboutme">
-    <meta property="og:site_name" content="About the Fluffian">
+    <link rel="stylesheet" href="/src/CSS/root.css">
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/Terrible%20Terror.ico">
-    <!--<meta name="image:Background" content="">-->
-    <meta name="description" content="Information and Contact.">
+    <link rel="preload" as="font" href="/src/ASSETS/Candara.ttf" type="font/ttf" crossorigin>
+    <meta name="keywords" content="LPS100">
+    <meta name="description" content="Welcome to our website!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -19,7 +17,7 @@
         <div class="sidebar">
             <div id="overlay">
                 <div class="portrait">
-                    <img src="https://cdn.discordapp.com/attachments/386579091551158272/1110579126617768036/export202305231544451479.png">
+                    <img src="/src/ASSETS/edvrian icon 2023.png">
                 </div>
             </div>
             <div id="sidebartext"></div>
@@ -27,8 +25,7 @@
             <div class="index">
                 <div class="divider"></div>
                 <div class="buttongrid">
-                    <button class="button">
-                        <a href="/">Home</a>
+                    <button class="button"><a href="/aboutme">About</a>
                     </button>
                     <button class="button">
                         <a href="/portfolio">Portfolio</a>
@@ -46,17 +43,18 @@
 <!--===================== Content =========================-->
 <div id="content">
     <div class="content-inner">
-        <div id="aboutme"></div>
+        <div id="main"></div>
     </div>
 </div>
 </div>
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
 <script> 
 $(function(){
-  $("#aboutme").load("aboutpage.html");
-  $("#sidebartext").load("sidebartext.html");
-  $("#footer").load("footer.html");
+  $("#main").load("/src/01-MAIN/main.html");
+  $("#sidebartext").load("/src/00-INDEX/indextext.html");
+  $("#footer").load("/src/06-OTHER/footer.html");
 });
 </script> 
 </html>

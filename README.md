@@ -46,6 +46,7 @@ Remember to list my Art Tumblr as another way to see all my artwork.
 
 ## General Code
 
+- [ ] Use the damn index.
 - [ ] Theme each page according to each character
  - [ ] Edvrian for main
  - [ ] Candrya for Artwork Info
@@ -70,5 +71,5 @@ Remember to list my Art Tumblr as another way to see all my artwork.
 - [ ] Create button asset
 
 ## Renaming & Organization
-- [ ] Organize pages in folders
+- [x] Organize pages in folders
 - [ ] Use a better naming system (e.g: `Port-Page.html`, `Port-Background.png`)
