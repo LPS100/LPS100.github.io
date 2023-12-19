@@ -6,7 +6,7 @@
 /*----------------Root----------------------*/
 :root{
     --background:#2b151f;
-    --portrait: url("https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/edvrian%20icon%202023.png");
+    --portrait: url("/src/Assets/edvrian\ icon\ 2023.png");
     --sidebar:#f2d1af;
     --sidebar-text:#333333;
     --index: #a06a33;
@@ -69,7 +69,7 @@
 /*------------------Sidebar-------------------*/
     .sidebar {
 	    display: block;  
-        border-image-source: url('https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/edvrian%20bg.webp');
+        border-image-source: url('/src/Assets/edvrian\ bg.webp');
         border-image-slice: 0% fill;
         border-image-outset: 5px;
 	    min-width: 280px;
@@ -102,7 +102,7 @@
 
     /*-------------------Button Area----------------*/
     .index {
-        border-image-source: url('https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/edvrian%20index%20bg.webp');
+        border-image-source: url('/src/Assets/edvrian\ index\ bg.webp');
         border-image-slice: 0% fill;
         border-image-outset: 12px;
         margin: auto;
@@ -223,7 +223,7 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    border-image-source: url('https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/hoston%20content.png');
+    border-image-source: url('/src/Assets/hoston\ content.png');
     border-image-slice: 30 fill;
     border-image-width: 30px;
     border-image-outset: 10px;
@@ -239,7 +239,7 @@
     break-inside: avoid;
     padding: 5px 5px 5px 25px;
     margin: 5px;
-    border-image-source: url('https://raw.githubusercontent.com/LPS100/LPS100.github.io/main/hoston%20background%2001.png');
+    border-image-source: url('/src/Assets/hoston\ background\ 01.png');
     border-image-slice: 30 fill;
     border-image-width: 20px;
     border-image-outset: 5px;

@@ -5,7 +5,7 @@
   margin-top: 15px;
   border-image-slice: 160 fill;
   border-image-outset: 5px;
-  border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1123368994003488768/hoston_portfolio_img.webp');
+  border-image-source: url('/src/Assets/hoston\ portfolio\ img.webp');
   border-image-width: 30px;
   max-width: max-content;
   overflow: scroll;
@@ -40,7 +40,7 @@
 .desc {
   position: relative;
   z-index: 2;
-  border-image-source: url('https://cdn.discordapp.com/attachments/778281142415392799/1123370923244921002/hoston_portfolio_desc.webp');
+  border-image-source: url('/src/Assets/hoston\ portfolio\ desc.webp');
   border-image-slice: 120 fill;
   border-image-outset: 5px;
   padding: 5px;
