@@ -99,7 +99,7 @@
 /*------------------Sidebar-------------------*/
     .sidebar {
 	    display: block;  
-        border-image-source: url('../Assets/edvrian_bg.webp');
+        border-image-source: url('../Assets/edvrian_bg.svg');
         border-image-slice: 0% fill;
         border-image-outset: 5px;
 	    min-width: 280px;
@@ -132,7 +132,7 @@
 
     /*-------------------Button Area----------------*/
     .index {
-        border-image-source: url('../Assets/edvrian_index_bg.webp');
+        border-image-source: url('../Assets/edvrian_index_bg.svg');
         border-image-slice: 0% fill;
         border-image-outset: 12px;
         margin: auto;
