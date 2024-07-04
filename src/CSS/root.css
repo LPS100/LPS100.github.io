@@ -274,6 +274,36 @@
     border-image-width: 20px;
     border-image-outset: 5px;
 }
+
+/*-----------Main Content - Edvrian------------------*/
+
+#content-edvrian {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-image-source: url('../Assets/background_edvrian_2048.svg');
+    border-image-slice: 300 fill;
+    border-image-width: 60px;
+    border-image-outset: 20px;
+	break-inside: avoid;
+	position: relative;
+	max-width: max-content;
+	padding: 5px;
+	margin: 5% 5% 1% 1%
+}
+
+.content-edvrian-inner {
+    word-wrap: break-word;
+    break-inside: avoid;
+    padding: 5px 5px 5px 25px;
+    margin: 5px;
+    border-image-source: url('../Assets/background_edvrian_inner_2048.svg');
+    border-image-slice: 410 fill;
+    border-image-width: 60px;
+    border-image-outset: 10px;
+}
+
 /*----------------Footer-------------*/
 
 #footer {
