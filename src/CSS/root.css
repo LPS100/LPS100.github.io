@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Candara';
+    font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
     src: url('../Fonts/Candara.woff2') format('woff2'),
         url('../Fonts/Candara.woff') format('woff');
     font-weight: normal;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Candara';
+    font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
     src: url('../Fonts/Candara-Bold.woff2') format('woff2'),
         url('../Fonts/Candara-Bold.woff') format('woff');
     font-weight: bold;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Candara';
+    font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
     src: url('../Fonts/Candara-Italic.woff2') format('woff2'),
         url('../Fonts/Candara-Italic.woff') format('woff');
     font-weight: normal;
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-    font-family: 'Candara';
+    font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
     src: url('../Fonts/Candara-BoldItalic.woff2') format('woff2'),
         url('../Fonts/Candara-BoldItalic.woff') format('woff');
     font-weight: bold;
