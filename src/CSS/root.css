@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-family: 'Candara';
     src: url('../Fonts/Candara.woff2') format('woff2'),
         url('../Fonts/Candara.woff') format('woff');
     font-weight: normal;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-family: 'Candara';
     src: url('../Fonts/Candara-Bold.woff2') format('woff2'),
         url('../Fonts/Candara-Bold.woff') format('woff');
     font-weight: bold;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-family: 'Candara';
     src: url('../Fonts/Candara-Italic.woff2') format('woff2'),
         url('../Fonts/Candara-Italic.woff') format('woff');
     font-weight: normal;
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-    font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-family: 'Candara';
     src: url('../Fonts/Candara-BoldItalic.woff2') format('woff2'),
         url('../Fonts/Candara-BoldItalic.woff') format('woff');
     font-weight: bold;
@@ -282,10 +282,10 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    border-image-source: url('../Assets/background_edvrian_2048.svg');
-    border-image-slice: 300 fill;
+    border-image-source: url('../Assets/bg_edvrian.png');
+    border-image-slice: 150 fill;
     border-image-width: 60px;
-    border-image-outset: 20px;
+    border-image-outset: 30px;
 	break-inside: avoid;
 	position: relative;
 	max-width: max-content;
@@ -293,15 +293,102 @@
 	margin: 5% 5% 1% 1%
 }
 
-.content-edvrian-inner {
+.content-inner-edvrian {
     word-wrap: break-word;
     break-inside: avoid;
     padding: 5px 5px 5px 25px;
     margin: 5px;
-    border-image-source: url('../Assets/background_edvrian_inner_2048.svg');
-    border-image-slice: 410 fill;
+    border-image-source: url('../Assets/bg_edvrian_inner.png');
+    border-image-slice: 150 fill;
+    border-image-width: 50px;
+    border-image-outset: 25px;
+}
+
+/*-----------Main Content - Candrya------------------*/
+
+#content-candrya {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-image-source: url('../Assets/bg_candrya.png');
+    border-image-slice: 150 fill;
     border-image-width: 60px;
-    border-image-outset: 10px;
+    border-image-outset: 30px;
+	break-inside: avoid;
+	position: relative;
+	max-width: max-content;
+	padding: 5px;
+	margin: 5% 5% 1% 1%
+}
+
+.content-inner-candrya {
+    word-wrap: break-word;
+    break-inside: avoid;
+    padding: 5px 5px 5px 25px;
+    margin: 5px;
+    border-image-source: url('../Assets/bg_candrya_inner.png');
+    border-image-slice: 150 fill;
+    border-image-width: 50px;
+    border-image-outset: 25px;
+}
+
+/*-----------Main Content - Drimitry------------------*/
+
+#content-drimitry {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-image-source: url('../Assets/bg_drimitry.png');
+    border-image-slice: 150 fill;
+    border-image-width: 60px;
+    border-image-outset: 30px;
+	break-inside: avoid;
+	position: relative;
+	max-width: max-content;
+	padding: 5px;
+	margin: 5% 5% 1% 1%
+}
+
+.content-inner-drimitry {
+    word-wrap: break-word;
+    break-inside: avoid;
+    padding: 5px 5px 5px 25px;
+    margin: 5px;
+    border-image-source: url('../Assets/bg_drimitry_inner.png');
+    border-image-slice: 150 fill;
+    border-image-width: 50px;
+    border-image-outset: 25px;
+}
+
+/*-----------Main Content - Magic Dreams------------------*/
+
+#content-mdreams {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-image-source: url('../Assets/bg_magicdreams.png');
+    border-image-slice: 150 fill;
+    border-image-width: 60px;
+    border-image-outset: 30px;
+	break-inside: avoid;
+	position: relative;
+	max-width: max-content;
+	padding: 5px;
+	margin: 5% 5% 1% 1%
+}
+
+.content-inner-mdreams {
+    word-wrap: break-word;
+    break-inside: avoid;
+    padding: 5px 5px 5px 25px;
+    margin: 5px;
+    border-image-source: url('../Assets/bg_magicdreams_inner.png');
+    border-image-slice: 150 fill;
+    border-image-width: 50px;
+    border-image-outset: 25px;
 }
 
 /*----------------Footer-------------*/
